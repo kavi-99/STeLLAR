@@ -24,8 +24,8 @@ name: GCR Services Cleanup
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "55 23 * * *"
+ # schedule:
+  #  - cron: "55 23 * * *"
 
 jobs:
   clean_up:
