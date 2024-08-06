@@ -2,8 +2,8 @@ name: Provision VM and setup self-hosted runner
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 23 * * 0"
+#  schedule:
+#    - cron: "0 23 * * 0"
 
 jobs:
   # setup-aws-vm:
