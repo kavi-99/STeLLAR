@@ -85,8 +85,9 @@ func RunCommandAndLogWithRetries(cmd *exec.Cmd, maxAttempts int) string {
 			return string(stdoutStderr)
 		}
 	}
-
-	log.Fatalf(err.Error())
+	// 25.09 update for logrus syntax error correction
+	log.Fatalf("Error occurred: %v", err)
+	// log.Fatalf(err.Error())
 	return err.Error()
 }
 
